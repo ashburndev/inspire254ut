@@ -38,9 +38,9 @@ class CaseControllerSpec extends Specification {
         when:"The save action is executed with an invalid instance"
             request.contentType = FORM_CONTENT_TYPE
             request.method = 'POST'
-            def case = new Case()
-            case.validate()
-            controller.save(case)
+            def caze = new Case()
+            caze.validate()
+            controller.save(caze)
 
         then:"The create view is rendered again with the correct model"
             model.caseInstance!= null
@@ -49,9 +49,9 @@ class CaseControllerSpec extends Specification {
         when:"The save action is executed with a valid instance"
             response.reset()
             populateValidParams(params)
-            case = new Case(params)
+            caze = new Case(params)
 
-            controller.save(case)
+            controller.save(caze)
 
         then:"A redirect is issued to the show action"
             response.redirectedUrl == '/case/show/1'
@@ -68,11 +68,11 @@ class CaseControllerSpec extends Specification {
 
         when:"A domain instance is passed to the show action"
             populateValidParams(params)
-            def case = new Case(params)
-            controller.show(case)
+            def caze = new Case(params)
+            controller.show(caze)
 
         then:"A model is populated containing the domain instance"
-            model.caseInstance == case
+            model.caseInstance == caze
     }
 
     void "Test that the edit action returns the correct model"() {
@@ -84,11 +84,11 @@ class CaseControllerSpec extends Specification {
 
         when:"A domain instance is passed to the edit action"
             populateValidParams(params)
-            def case = new Case(params)
-            controller.edit(case)
+            def caze = new Case(params)
+            controller.edit(caze)
 
         then:"A model is populated containing the domain instance"
-            model.caseInstance == case
+            model.caseInstance == caze
     }
 
     void "Test the update action performs an update on a valid domain instance"() {
@@ -104,22 +104,22 @@ class CaseControllerSpec extends Specification {
 
         when:"An invalid domain instance is passed to the update action"
             response.reset()
-            def case = new Case()
-            case.validate()
-            controller.update(case)
+            def caze = new Case()
+            caze.validate()
+            controller.update(caze)
 
         then:"The edit view is rendered again with the invalid instance"
             view == 'edit'
-            model.caseInstance == case
+            model.caseInstance == caze
 
         when:"A valid domain instance is passed to the update action"
             response.reset()
             populateValidParams(params)
-            case = new Case(params).save(flush: true)
-            controller.update(case)
+            caze = new Case(params).save(flush: true)
+            controller.update(caze)
 
         then:"A redirect is issues to the show action"
-            response.redirectedUrl == "/case/show/$case.id"
+            response.redirectedUrl == "/case/show/$caze.id"
             flash.message != null
     }
 
@@ -136,13 +136,13 @@ class CaseControllerSpec extends Specification {
         when:"A domain instance is created"
             response.reset()
             populateValidParams(params)
-            def case = new Case(params).save(flush: true)
+            def caze = new Case(params).save(flush: true)
 
         then:"It exists"
             Case.count() == 1
 
         when:"The domain instance is passed to the delete action"
-            controller.delete(case)
+            controller.delete(caze)
 
         then:"The instance is deleted"
             Case.count() == 0
