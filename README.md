@@ -2,6 +2,21 @@
 
 This project was created to explore the unit testing functionality of a Grails 2.5.4 web application.
 
+Here are some URLs for web pages providing useful information.
+
+```
+https://grails.github.io/grails2-doc/2.5.4/guide/testing.html
+
+https://plugins.jetbrains.com/plugin/7114-spock-framework-enhancements
+https://plugins.jetbrains.com/plugin/7114-spock-framework-enhancements/reviews
+
+https://blog.jetbrains.com/idea/2021/01/tutorial-spock-part-1-getting-started/
+https://blog.jetbrains.com/idea/2021/02/tutorial-spock-part-2-writing-tests/
+https://blog.jetbrains.com/idea/2021/02/tutorial-spock-part-3-data-driven-testing/
+https://blog.jetbrains.com/idea/2021/02/tutorial-spock-part-4-mocking-and-stubbing/
+https://blog.jetbrains.com/idea/2021/02/tutorial-spock-part-5-other-useful-tips/
+```
+
 ```
 cd "\Users\David Holberton\g2mprojects"
 grails create-app inspire254ut
