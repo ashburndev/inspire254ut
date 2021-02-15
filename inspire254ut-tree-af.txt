@@ -1,0 +1,121 @@
+Folder PATH listing
+Volume serial number is 4603-A8D3
+C:.
+|   .classpath
+|   .gitignore
+|   .project
+|   application.properties
+|   build.xml
+|   grailsw
+|   grailsw.bat
+|   inspire254ut.iml
+|   inspire254ut.ipr
+|   inspire254ut.iws
+|   inspire254ut.tmproj
+|   ivy.xml
+|   ivysettings.xml
+|   
++---grails-app
+|   +---assets
+|   |   +---images
+|   |   |   |   apple-touch-icon-retina.png
+|   |   |   |   apple-touch-icon.png
+|   |   |   |   favicon.ico
+|   |   |   |   grails_logo.png
+|   |   |   |   spinner.gif
+|   |   |   |   springsource.png
+|   |   |   |   
+|   |   |   \---skin
+|   |   |           database_add.png
+|   |   |           database_delete.png
+|   |   |           database_edit.png
+|   |   |           database_save.png
+|   |   |           database_table.png
+|   |   |           exclamation.png
+|   |   |           house.png
+|   |   |           information.png
+|   |   |           shadow.jpg
+|   |   |           sorted_asc.gif
+|   |   |           sorted_desc.gif
+|   |   |           
+|   |   +---javascripts
+|   |   |       application.js
+|   |   |       
+|   |   \---stylesheets
+|   |           application.css
+|   |           errors.css
+|   |           main.css
+|   |           mobile.css
+|   |           
+|   +---conf
+|   |   |   BootStrap.groovy
+|   |   |   BuildConfig.groovy
+|   |   |   Config.groovy
+|   |   |   DataSource.groovy
+|   |   |   UrlMappings.groovy
+|   |   |   
+|   |   +---hibernate
+|   |   \---spring
+|   |           resources.groovy
+|   |           
+|   +---controllers
+|   +---domain
+|   +---i18n
+|   |       messages.properties
+|   |       messages_cs_CZ.properties
+|   |       messages_da.properties
+|   |       messages_de.properties
+|   |       messages_es.properties
+|   |       messages_fr.properties
+|   |       messages_it.properties
+|   |       messages_ja.properties
+|   |       messages_nb.properties
+|   |       messages_nl.properties
+|   |       messages_pl.properties
+|   |       messages_pt_BR.properties
+|   |       messages_pt_PT.properties
+|   |       messages_ru.properties
+|   |       messages_sv.properties
+|   |       messages_th.properties
+|   |       messages_zh_CN.properties
+|   |       
+|   +---services
+|   +---taglib
+|   +---utils
+|   \---views
+|       |   error.gsp
+|       |   index.gsp
+|       |   
+|       \---layouts
+|               main.gsp
+|               
++---lib
++---scripts
++---src
+|   +---groovy
+|   \---java
++---target
+|   \---work
+|       \---resources
++---test
+|   +---integration
+|   \---unit
++---web-app
+|   +---css
+|   +---images
+|   +---js
+|   +---META-INF
+|   \---WEB-INF
+|       |   applicationContext.xml
+|       |   sitemesh.xml
+|       |   
+|       \---tld
+|               grails.tld
+|               spring-form.tld
+|               spring.tld
+|               
+\---wrapper
+        grails-wrapper-runtime-2.5.4.jar
+        grails-wrapper.properties
+        springloaded-1.2.4.RELEASE.jar
+        

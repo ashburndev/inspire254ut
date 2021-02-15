@@ -1,0 +1,46 @@
+Folder PATH listing
+Volume serial number is 4603-A8D3
+C:.
++---grails-app
+|   +---assets
+|   |   +---images
+|   |   |   \---skin
+|   |   +---javascripts
+|   |   \---stylesheets
+|   +---conf
+|   |   +---hibernate
+|   |   \---spring
+|   +---controllers
+|   |   \---inspire
+|   +---domain
+|   |   \---inspire
+|   +---i18n
+|   +---migrations
+|   +---services
+|   |   \---inspire
+|   +---taglib
+|   +---utils
+|   \---views
+|       +---case
+|       +---caseSection
+|       +---caseStatus
+|       +---educationRecord
+|       +---employmentRecord
+|       \---layouts
++---lib
++---scripts
++---src
+|   +---groovy
+|   \---java
++---test
+|   +---integration
+|   \---unit
+|       \---inspire
++---web-app
+|   +---css
+|   +---images
+|   +---js
+|   +---META-INF
+|   \---WEB-INF
+|       \---tld
+\---wrapper
