@@ -70,7 +70,9 @@ grails status
 git log --pretty=format:"%h - %an, %ai : %s"
 dir /o:gd
 
+git push
 grails run-app
+grails test-app
 ```
 
 ```
@@ -179,6 +181,50 @@ C:\Users\David Holberton\g2mprojects\inspire254ut>dir /o:gd
 02/15/2021  07:38 AM            17,639 inspire254ut.dependency.report
               19 File(s)         72,891 bytes
               10 Dir(s)  42,722,451,456 bytes free
+
+C:\Users\David Holberton\g2mprojects\inspire254ut>
+C:\Users\David Holberton\g2mprojects\inspire254ut>git push
+C:\Users\David Holberton\g2mprojects\inspire254ut>grails run-app
+Enumerating objects: 98, done.
+Counting objects: 100% (98/98), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (79/79), done.
+Writing objects: 100% (92/92), 20.56 KiB | 1.37 MiB/s, done.
+Total 92 (delta 49), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (49/49), completed with 2 local objects.
+To https://github.com/ashburndev/inspire254ut.git
+   935e349..c3554d0  main -> main
+
+| Server running. Browse to http://localhost:8080/inspire254ut
+
+Terminate batch job (Y/N)?
+^C -server -Xmx768M -Xms64M -Dfile.encoding=UTF-8  -javaagent:C:/LocalApps/grails-2.5.4/lib/org.springframework/springloaded/jars/springloaded-1.2.4.RELEASE.jar -Xverify:none -Dspringloaded.synchronize=true -Djdk.reflect.allowGetCallerClass=true -Dspringloaded=\""profile=grails;cacheDir=C:\Users\David Holberton/.grails/2.5.4/"\" -Dprogram.name="" -Dgrails.home="C:\LocalApps\grails-2.5.4" -Dgrails.version=2.5.4 -Dbase.dir=. -Dtools.jar="C:\LocalApps\Java\jdk1.8.0_261\lib\tools.jar" -Dgroovy.starter.conf="C:\LocalApps\grails-2.5.4\conf\groovy-starter.conf" -classpath "C:\LocalApps\grails-2.5.4\lib\org.codehaus.groovy\groovy-all\jars\groovy-all-2.4.4.jar;C:\LocalApps\grails-2.5.4\dist\grails-bootstrap-2.5.4.jar" org.codehaus.groovy.grails.cli.support.GrailsStarter --main org.codehaus.groovy.grails.cli.support.GrailsStarter --conf "C:\LocalApps\grails-2.5.4\conf\groovy-starter.conf" --classpath "" " run-app" was unexpected at this time.
+
+C:\Users\David Holberton\g2mprojects\inspire254ut>
+C:\Users\David Holberton\g2mprojects\inspire254ut>grails test-app
+
+| Running without daemon...
+..........................................
+|Compiling 15 source files
+.Error
+|
+Compilation error compiling [unit] tests: startup failed:
+C:\Users\David Holberton\g2mprojects\inspire254ut\test\unit\inspire\CaseControllerSpec.groovy: 41: unexpected token: def @ line 41, column 13.
+               def case = new Case()
+               ^
+1 error
+ (Use --stacktrace to see the full trace)
+| Error Forked Grails VM exited with error
+
+C:\Users\David Holberton\g2mprojects\inspire254ut>
+C:\Users\David Holberton\g2mprojects\inspire254ut>git log --pretty=format:"%h - %an, %ai : %s"
+c0a83ea - ashburndev, 2021-02-15 08:07:18 -0500 : Merge branch 'main' of https://github.com/ashburndev/inspire254ut
+4203909 - ashburndev, 2021-02-15 08:06:56 -0500 : replace variable case with caze in CaseControllerSpec.groovy
+270154a - ashburndev, 2021-02-15 07:48:57 -0500 : Create README.md
+c3554d0 - ashburndev, 2021-02-15 07:39:04 -0500 : add documentation artifacts
+29b2e26 - ashburndev, 2021-02-15 07:34:21 -0500 : add controller and service classes
+cf29241 - ashburndev, 2021-02-15 07:31:49 -0500 : add domain classes
+935e349 - ashburndev, 2021-02-15 07:24:59 -0500 : initial commit
 
 C:\Users\David Holberton\g2mprojects\inspire254ut>
 ```
